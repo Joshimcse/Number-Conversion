@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Number Conversion</title>
+
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container" id="">
+		<h1>Number Conversion
+			<span class="badge">beta Version</span>
+		</h1>
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a data-toggle="tab" href="#bnr">Binary to Others</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#dec">Decimal to Others</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#oct">Octal to Others</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#hex">Hex to Others</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="bnr" class="tab-pane fade in active">
+				<div class="col-md-5">
+					<h2>Binary System</h2>
+					<div class="form-group">
+						<label for="usr">Binary:</label>
+						<input type="bnr" class="form-control" id="binary">
+					</div>
+					<div class="form-group">
+						<label for="dcm">Decimal:</label>
+						<input type="text" class="form-control" id="b2d" disabled>
+					</div>
+					<div class="form-group">
+						<label for="oct">Octal:</label>
+						<input type="text" class="form-control" id="b2o" disabled>
+					</div>
+					<div class="form-group">
+						<label for="hex">Hexadecimal:</label>
+						<input type="text" class="form-control" id="b2h" disabled>
+					</div>
+				</div>
+				<div class="col-md-5 info" id="">
+					<h3>Binary System</h3>
+					<P>
+						<strong>Binary</strong> is the simplest kind of number system that uses only two digits of 0 and 1. By using
+						these digits computational
+						problems can be solved by machines because in digital electronics a transistor is used in two states. Those two
+						states
+						can be represented by 0 and 1. That is why this number system is the most preferred in modern computer engineer,
+						networking
+						and communication specialists, and other professionals.</P>
+				</div>
+				<div class="col-md-2">
+					<table class="tablo">
+						<tbody>
+							<tr>
+								<th>Binary</th>
+								<th>Octal</th>
+								<th>Decimal</th>
+								<th>Hexa</th>
+							</tr>
+							<tr>
+								<td>0000</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>0001</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>0010</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+
+							</tr>
+							<tr>
+								<td>0011</td>
+								<td>3</td>
+								<td>3</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>0100</td>
+								<td>4</td>
+								<td>4</td>
+								<td>4</td>
+
+							</tr>
+							<tr>
+								<td>0101</td>
+								<td>5</td>
+								<td>5</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>0110</td>
+								<td>6</td>
+								<td>6</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>0111</td>
+								<td>7</td>
+								<td>7</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>1000</td>
+								<td>10</td>
+								<td>8</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>11</td>
+								<td>9</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>1010</td>
+								<td>12</td>
+								<td>10</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>1011</td>
+								<td>13</td>
+								<td>11</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>1100</td>
+								<td>14</td>
+								<td>12</td>
+								<td>C</td>
+							</tr>
+							<tr>
+								<td>1101</td>
+								<td>15</td>
+								<td>13</td>
+								<td>D</td>
+							</tr>
+							<tr>
+								<td>1110</td>
+								<td>16</td>
+								<td>14</td>
+								<td>E</td>
+							</tr>
+							<tr>
+								<td>1111</td>
+								<td>17</td>
+								<td>15</td>
+								<td>F</td>
+							</tr>
+						</tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div id="dec" class="tab-pane fade">
+				<div class="col-md-5">
+					<h2>Decimal System</h2>
+					<div class="form-group">
+						<label for="dcm">Decimal:</label>
+						<input type="dcm" class="form-control" id="decimal">
+					</div>
+					<div class="form-group">
+						<label for="bnr">Binary:</label>
+						<input type="text" class="form-control" id="d2b" disabled>
+					</div>
+					<div class="form-group">
+						<label for="oct">Octal:</label>
+						<input type="text" class="form-control" id="d2o" disabled>
+					</div>
+					<div class="form-group">
+						<label for="hex">Hexadecimal:</label>
+						<input type="text" class="form-control" id="d2h" disabled>
+					</div>
+				</div>
+				<div class="col-md-5 info" id="">
+					<h3>Decimal System</h3>
+					<P>
+						<strong>Decimal</strong> number system is the most commonly used and the most familiar one to the general public.
+						It is also
+						known as Base 10 numbering system since it is based on 10 following symbols: 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. In
+						decimal
+						system, every digit has its own position as well as the decimal point. I.e. the number 356.74 has 4 in the
+						Hundredths
+						position, 7 in the Tenths position, 6 in the Units position, 5 in the Tens position, and 3 in the Hundreds
+						position.
+						Decimal number system is also one of the oldest known numeral system, which is historically related to
+						Hindu-Arabic
+						numeral system. </P>
+				</div>
+				<div class="col-md-2">
+					<table class="tablo">
+						<tbody>
+							<tr>
+								<th>Decimal</th>
+								<th>Binary</th>
+								<th>Octal</th>
+								<th>Hexa</th>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0000</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>0001</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>0010</td>
+								<td>2</td>
+								<td>2</td>
+
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>0011</td>
+								<td>3</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>0100</td>
+								<td>4</td>
+								<td>4</td>
+
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>0101</td>
+								<td>5</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>0110</td>
+								<td>6</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>0111</td>
+								<td>7</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>1000</td>
+								<td>10</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>1001</td>
+								<td>11</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1010</td>
+								<td>12</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>1011</td>
+								<td>13</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1100</td>
+								<td>14</td>
+								<td>C</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>1101</td>
+								<td>15</td>
+								<td>D</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>1110</td>
+								<td>16</td>
+								<td>E</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>1111</td>
+								<td>17</td>
+								<td>F</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div id="oct" class="tab-pane fade">
+				<div class="col-md-5">
+					<h2>Octal System</h2>
+					<div class="form-group">
+						<label for="oct">Octal:</label>
+						<input type="text" class="form-control" id="octal">
+					</div>
+					<div class="form-group">
+						<label for="usr">Binary:</label>
+						<input type="bnr" class="form-control" id="o2b" disabled>
+					</div>
+					<div class="form-group">
+						<label for="dcm">Decimal:</label>
+						<input type="text" class="form-control" id="o2d" disabled>
+					</div>
+
+					<div class="form-group">
+						<label for="hex">Hexadecimal:</label>
+						<input type="text" class="form-control" id="o2h" disabled>
+					</div>
+				</div>
+				<div class="col-md-5 info" id="">
+					<h3>Octal System</h3>
+					<P>
+						<strong>Octal</strong> or oct for short, is the base-8 number system, and uses the digits 0 to 7. Octal numerals
+						can be made
+						from binary numerals by grouping consecutive binary digits into groups of three (starting from the right).
+						<br>For example, the binary representation for decimal 74 is 1001010. Two zeroes can be added at the left: (00)1
+						001 010,
+						corresponding the octal digits 1 1 2, yielding the octal representation 112.</P>
+				</div>
+				<div class="col-md-2">
+					<table class="tablo">
+						<tbody>
+							<tr>
+								<th>Octal</th>
+								<th>Binary</th>
+								<th>Decimal</th>
+								<th>Hexa</th>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0000</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>0001</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>0010</td>
+								<td>2</td>
+								<td>2</td>
+
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>0011</td>
+								<td>3</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>0100</td>
+								<td>4</td>
+								<td>4</td>
+
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>0101</td>
+								<td>5</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>0110</td>
+								<td>6</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>0111</td>
+								<td>7</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1000</td>
+								<td>8</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>1001</td>
+								<td>9</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1010</td>
+								<td>10</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>1011</td>
+								<td>11</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>1100</td>
+								<td>12</td>
+								<td>C</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>1101</td>
+								<td>13</td>
+								<td>D</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>1110</td>
+								<td>14</td>
+								<td>E</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>1111</td>
+								<td>15</td>
+								<td>F</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div id="hex" class="tab-pane fade">
+				<div class="col-md-5">
+					<h2>Hexadecimal System</h2>
+					<div class="form-group">
+						<label for="hex">Hexadecimal:</label>
+						<input type="text" class="form-control" id="hexa">
+					</div>
+					<div class="form-group">
+						<label for="usr">Binary:</label>
+						<input type="bnr" class="form-control" id="h2b" disabled>
+					</div>
+					<div class="form-group">
+						<label for="dcm">Decimal:</label>
+						<input type="text" class="form-control" id="h2d" disabled>
+					</div>
+					<div class="form-group">
+						<label for="oct">Octal:</label>
+						<input type="text" class="form-control" id="h2o" disabled>
+					</div>
+				</div>
+				<div class="col-md-5 info" id="">
+					<h3>Hexadecimal System</h3>
+					<P>
+						<strong>Hex</strong>, or hexadecimal, is a number system of base 16. This number system is especially interesting
+						because in
+						our casually used decimal system we have only 10 digits to represent numbers. As hex system has 16 digits, the
+						extra
+						needed 6 digits are represented by the first 6 letters of English alphabet. Hence, hex digits are
+						0,1,2,3,4,5,6,7,8
+						and 9 A, B, C, D, E, F. This number system is the most commonly used in mathematics and information technologies.
+						I.e.
+						in html programming colors can be represented by a 6-digit hexadecimal number: FFFFFF represents white, 000000
+						represents
+						black, and so on. </P>
+				</div>
+				<div class="col-md-2">
+					<table class="tablo">
+						<tbody>
+							<tr>
+								<th>Hexa</th>
+								<th>Binary</th>
+								<th>Octal</th>
+								<th>Decimal</th>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0000</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>0001</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>0010</td>
+								<td>2</td>
+								<td>2</td>
+
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>0011</td>
+								<td>3</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>0100</td>
+								<td>4</td>
+								<td>4</td>
+
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>0101</td>
+								<td>5</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>0110</td>
+								<td>6</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>0111</td>
+								<td>7</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>1000</td>
+								<td>10</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>1001</td>
+								<td>11</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>A</td>
+								<td>1010</td>
+								<td>12</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>B</td>
+								<td>1011</td>
+								<td>13</td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>C</td>
+								<td>1100</td>
+								<td>14</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>D</td>
+								<td>1101</td>
+								<td>13</td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>E</td>
+								<td>1110</td>
+								<td>16</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td>F</td>
+								<td>1111</td>
+								<td>17</td>
+								<td>15</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>Design & Developed By
+			<a href="http://facebook.com/joshimCSE">Joshim Uddin</a>
+		</p>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="./js/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="./js/bootstrap.min.js"></script>
+	<!-- all customize js is here -->
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
