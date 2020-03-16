@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { navigate } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
@@ -9,6 +8,43 @@ import Table from "../components/table"
 import Calc from "../components/calc"
 
 export default class index extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      binary: "",
+      decimal: "",
+      octal: "",
+      hexa: "",
+    }
+  }
+
+  binaryHandler = event => {
+    this.value = event.target.value
+
+    this.decimal = parseInt(this.value, 2);
+    this.binary = this.decimal.toString(2)
+    this.octal = this.decimal.toString(8)
+    this.hexa = this.decimal.toString(16).toUpperCase();
+
+    if(this.value === "" || isNaN(this.decimal)) {
+      this.setState({
+        binary: "",
+        decimal: "",
+        octal: "",
+        hexa: ""
+      })
+    } else {
+      this.setState({
+        binary: this.binary,
+        decimal: this.decimal,
+        octal: this.octal,
+        hexa: this.hexa,
+      })
+    }
+
+
+  }
+
   render() {
     return (
       <div>
@@ -17,7 +53,7 @@ export default class index extends Component {
           <title>মূলপাতা</title>
         </Helmet>
         <Layout>
-          <Calc />
+          <Calc data={this.state} method={{ binaryHandler: this.binaryHandler}}/>
           <Info />
           <Table />
         </Layout>

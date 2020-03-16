@@ -7,14 +7,14 @@ import "./styles/styles.css"
 const Layout = ({ children }) => {
   return (
     <div>
-      <div class="container" id="">
+      <div className="container" id="">
         <h1>
           Number Conversion
-          <span class="badge">beta Version</span>
+          <span className="badge">beta Version</span>
         </h1>
         {children}
       </div>
-      <div class="footer">
+      <div className="footer">
         <p>
           Design & Developed By
           <a href="http://facebook.com/joshimCSE"> Joshim Uddin</a>

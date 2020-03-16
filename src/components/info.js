@@ -2,7 +2,7 @@ import React from "react"
 
 const Info = () => {
   return (
-    <div class="col-md-5 info" id="">
+    <div className="col-md-5 info" id="">
       <h3>Hexadecimal System</h3>
       <p>
         <strong>Hex</strong>, or hexadecimal, is a number system of base 16.
