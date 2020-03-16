@@ -3,7 +3,6 @@ import React from 'react';
 import Input from './input';
 
 const Calc = props => {
-  console.log(props);
   let { data, methods } = props;
   return (
     <div className="col-md-5">
@@ -23,5 +22,4 @@ const Calc = props => {
     </div>
   );
 };
-
 export default Calc;
