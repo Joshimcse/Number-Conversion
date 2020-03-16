@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const Input = props => {
   return (
@@ -9,10 +9,10 @@ const Input = props => {
         type="text"
         className="form-control"
         value={props.value}
-        onChange={props.method}
+        onChange={props.handler}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
